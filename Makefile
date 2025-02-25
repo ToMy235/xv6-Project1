@@ -194,12 +194,10 @@ UPROGS=\
 	$U/_grind\
 	$U/_wc\
 	$U/_zombie\
-<<<<<<< HEAD
 	$U/_find\
-=======
 	$U/_pingpong\
 	$U/_primes\
->>>>>>> 89ea394 (UPROGS)
+
 
 
 
