@@ -40,8 +40,13 @@ void find(const char *dir, const char *target) {
 			printf("find: cannot stat %s\n", path);
 			continue;
 		}
-		if (st.type == T_FILE && strcmp(de.name, target) == 0) {
-			printf("%s\n", path);
+		if (st.type == T_FILE) {
+			if (strcmp(de.name, target) == 0) {
+				printf("%s\n", path);
+			}
+			else {
+				printf("find: cannot find %s\n", path);
+			}
 		}
 		if (st.type == T_DIR) {
 			find(path, target);
